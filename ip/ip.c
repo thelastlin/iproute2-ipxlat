@@ -63,7 +63,7 @@ static void usage(void)
 		"                   macsec | maddress | monitor | mptcp | mroute | mrule |\n"
 		"                   neighbor | neighbour | netconf | netns | nexthop | ntable |\n"
 		"                   ntbl | route | rule | sr | stats | tap | tcpmetrics |\n"
-		"                   token | tunnel | tuntap | vrf | xfrm }\n"
+		"                   token | tunnel | tuntap | vrf | xfrm | xlat }\n"
 		"       OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |\n"
 		"                    -h[uman-readable] | -iec | -j[son] | -p[retty] |\n"
 		"                    -f[amily] { inet | inet6 | mpls | bridge | link } |\n"
@@ -117,6 +117,7 @@ static const struct cmd {
 	{ "nexthop",	do_ipnh },
 	{ "mptcp",	do_mptcp },
 	{ "ioam",	do_ioam6 },
+	{ "xlat",	do_ipxlat },
 	{ "help",	do_help },
 	{ "stats",	do_ipstats },
 	{ 0 }

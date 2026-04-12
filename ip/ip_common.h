@@ -92,6 +92,7 @@ int do_seg6(int argc, char **argv);
 int do_ipnh(int argc, char **argv);
 int do_mptcp(int argc, char **argv);
 int do_ioam6(int argc, char **argv);
+int do_ipxlat(int argc, char **argv);
 int do_ipstats(int argc, char **argv);
 
 int iplink_get(char *name, __u32 filt_mask);
